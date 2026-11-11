@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: "{{target.database}}"
+    schema: stripe
+    description: Payment system used in jaffle shop
+    tables:
+      - name: payment
+        description: card payment
