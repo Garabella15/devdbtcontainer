@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: "{{target.database}}"
+    schema: "{{ target.schema }}"
+    description: E-commerce data for the Jaffle Shop
+    tables:
+      - name: customers
+        description: One record per person who has purchased one or more items
+      - name: orders
+        description: One record per order (consisting of one or more order items)
+        config:
+     
+
+  - name: stripe
+    database: "{{target.database}}"
+    schema: "{{target.schema}}"
+    description: Payment system used in jaffle shop
+    tables:
+      - name: payment
+        description: card payment
