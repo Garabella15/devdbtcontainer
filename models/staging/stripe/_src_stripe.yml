@@ -2,15 +2,15 @@ version: 2
 
 sources:
   - name: stripe
+    description: A clone of the stripe payment database
     database: "{{target.database}}"
     schema: stripe
-    description: Payment system used in jaffle shop
     tables:
       - name: payment
         description: card payment
         columns:
           - name: id
-            description: The unique identifier for each payment.
+            description: The primary key.
             data_tests:
               - unique
               - not_null

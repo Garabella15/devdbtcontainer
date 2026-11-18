@@ -1,9 +1,9 @@
 models:
   - name: stg_stripe__payment
-    description: "Staging model for jaffle_shop"
+    description: "payment per order per customer"
     columns:
       - name: payment_id
-        description: "The unique identifier for each customer."
+        description: "The primary key."
         data_tests:
           - unique
           - not_null
