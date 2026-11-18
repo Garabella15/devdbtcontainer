@@ -8,6 +8,13 @@ sources:
     tables:
       - name: customers
         description: One record per person who has purchased one or more items
+        columns:
+          - name: id
+            description: The unique identifier for each customer.
+            data_tests:
+              - unique
+              - not_null
+        
       - name: orders
         description: One record per order (consisting of one or more order items)
         config:

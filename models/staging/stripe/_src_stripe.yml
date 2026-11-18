@@ -8,3 +8,9 @@ sources:
     tables:
       - name: payment
         description: card payment
+        columns:
+          - name: id
+            description: The unique identifier for each payment.
+            data_tests:
+              - unique
+              - not_null
